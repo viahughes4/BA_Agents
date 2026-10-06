@@ -127,6 +127,25 @@ The catalog is the **menu**. The project file is the **order**. If `project-cont
 | `/sub:confluence-read` | Search and read Confluence pages |
 | `/sub:confluence-write` | Propose and publish Confluence content with PM approval gate |
 
+### Accedo PM Skills (54 reusable operations)
+
+**Available in `.claude/skills/` organized by domain:**
+
+- **Discovery (4):** feature-discovery, discovery, gap-analysis, new-feature
+- **Storytelling (5):** generate-stories, spec-to-tickets, generate-prd, validate-stories, validate-ac
+- **Tracking (5):** weekly-tracker, backlog-grooming, backlog-health, jira-cleanup, ticket-generation
+- **Reporting (6):** status-report, project-health-report, release-prep, release-notes, release-day-runbook, qa-report
+- **Team-Ops (5):** standup-prep, async-standup, morning-briefing, meeting-helper, end-of-day
+- **Admin (3):** jira-qa-duplicates, jira-qa-contradictions, escalation-brief
+- **Planning (4):** sprint-planning, sprint-gate, sprint-closeout, sprint-velocity
+- **Research (23):** ask, biweekly-sync-prep, cert-checklist, competitive-analysis, confluence-email-digest, confluence-lookup, decision-log, dependency-radar, escalation-tracker, estimate-review, mitigation-plan, onboarding, po-sync-prep, project-schedule, risk-register, roadmap-sync, sow-importer, status-meeting-prep, status-report-email-writer, sync-general-skills, thread-digest
+
+**Invocation:** Direct command (`/skill-name [input]`) or within commands/agents via `invoke('/skill-name')`.
+
+**Integration:** Many Accedo skills compose with TBA commands — e.g., `/generate-stories` calls `spec-to-tickets` for batch generation, `/validate-stories` augments the TBA 5-lens check with extended validation. See `SKILLS_REGISTRY.md` for full routing table.
+
+**Discovery:** Use `SKILLS_REGISTRY.md` to find the right skill by use case or workflow phase.
+
 ---
 
 ## COMMUNICATION STYLE
