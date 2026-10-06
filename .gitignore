@@ -1,0 +1,14 @@
+# Claude Code — local settings (machine-specific, never commit)
+.claude/settings.local.json
+
+# MCP auth cache (personal OAuth tokens)
+.claude/mcp-auth-cache.json
+
+# Claude Code worktrees (harness-managed, never commit)
+.claude/worktrees/
+
+# Per-engagement project context (local only — one file per PM per active engagement)
+project-context.md
+
+# OS
+.DS_Store
